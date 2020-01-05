@@ -1,2 +1,2 @@
 # DNN
-A simple Deep Neural Network implementation write in c++;
+A simple open-source Deep Neural Network implementation write in c++;
