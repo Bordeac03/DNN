@@ -19,7 +19,7 @@ int main()
 
 
     NeuralNetwork brain(2,2,1,0.2);
-    brain.AddLayer();
+    brain.AddLayer(1);
 
     vector <vector<double> >input;
     vector<double> in;
