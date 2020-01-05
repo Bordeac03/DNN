@@ -9,5 +9,6 @@ First you put the number of input , hidden and output nodes of the layers and th
 EX:
 NN::NeuralNetwork brain(2,2,1,0.2); // now it has just an hidden layer 
 
+You could add more Hidden Layers by using the AddLayer(int Layers) function.
 And after that you could use the function Backpropagation(matrix input, matrix target) to train the neural network and the function named feedforward(matrix input) for making a guess.
 In main.cpp you have an example where the NN is trained and making right predictions for the xor problem.
