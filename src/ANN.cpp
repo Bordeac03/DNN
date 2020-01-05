@@ -47,9 +47,12 @@ void NeuralNetwork::Backpropagation(Matrix input,Matrix target)
      this->Input.Backpropagation(input,Error);
 }
 
-void NeuralNetwork::AddLayer()
+void NeuralNetwork::AddLayer(int Layers)
 {
-    Layer Hidden(this->numH,this->numH,this->lr);
-    Hidden_Layers.push_front(Hidden);
+    for(int i = 1; i <= Layers; i++)
+    {
+        Layer Hidden(this->numH,this->numH,this->lr);
+        Hidden_Layers.push_front(Hidden);
+    }
 }
 
